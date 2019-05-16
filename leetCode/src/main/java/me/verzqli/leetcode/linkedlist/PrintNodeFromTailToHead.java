@@ -1,5 +1,6 @@
 package me.verzqli.leetcode.linkedlist;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 /**
@@ -48,13 +49,21 @@ public class PrintNodeFromTailToHead {
      * @param header
      */
     private static void printByRecursive(Node header) {
-        if (header==null){
-            return;
-        }
-        if (header.next!=null){
+        if (header!=null){
             printByRecursive(header.next);
         }
         System.out.println("NodePrintByRecursive = [" + header.data + "]");
     }
-
+    /**
+     * 返回arraylist
+     * @param header
+     */
+    ArrayList<Integer> result=new ArrayList<>();
+    private  ArrayList<Integer> printByRecursiveReturnList(Node header) {
+        if (header!=null){
+            printByRecursiveReturnList(header.next);
+            result.add(header.data);
+        }
+        return result;
+    }
 }
