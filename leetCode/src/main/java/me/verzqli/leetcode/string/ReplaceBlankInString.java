@@ -1,4 +1,4 @@
-package me.verzqli.leetcode.array;
+package me.verzqli.leetcode.string;
 
 import java.util.Arrays;
 
@@ -16,7 +16,7 @@ public class ReplaceBlankInString {
     public static void main(String[] args) {
         char[] str;
         str = "HELLO WORLD HAHA".toCharArray();
-        System.out.println("args = [" + replace(str,str.length) + "]");
+        System.out.println("args = [" + replace(str, str.length) + "]");
     }
 
     public static String replace(char[] str, int length) {
@@ -26,7 +26,7 @@ public class ReplaceBlankInString {
         int newIndex, oldIndex = 0, blankCount = 0;
         int i = 0;
         for (int j = 0; j < length; j++) {
-            if (str[j] == ' '){
+            if (str[j] == ' ') {
                 blankCount++;
             }
         }
@@ -34,10 +34,10 @@ public class ReplaceBlankInString {
             return Arrays.toString(str);
         }
         int newLength = length + blankCount * 2;
-        oldIndex = length-1;
-       char [] newArray = new char[newLength];
+        oldIndex = length - 1;
+        char[] newArray = new char[newLength];
         newIndex = newLength - 1;
-        while (oldIndex >= 0 ) {
+        while (oldIndex >= 0) {
             if (str[oldIndex] == ' ') {
                 newArray[newIndex--] = '0';
                 newArray[newIndex--] = '2';
