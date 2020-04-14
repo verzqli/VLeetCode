@@ -8,6 +8,6 @@ package me.verzqli.leetcode.linkedlist;
  * </pre>
  */
 public class Node {
-    int data;
+    int val;
     Node next = null;
 }

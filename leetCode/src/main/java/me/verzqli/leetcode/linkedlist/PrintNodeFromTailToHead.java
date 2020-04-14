@@ -18,10 +18,10 @@ public class PrintNodeFromTailToHead {
         Node headNode = new Node();
         Node nextNode = new Node();
         headNode.next=nextNode;
-        headNode.data=-11;
-        nextNode.data=-22;
+        headNode.val=-11;
+        nextNode.val=-22;
         for (int i = 0; i < 20; i++) {
-            nextNode.data = i;
+            nextNode.val = i;
             nextNode.next = new Node();
             nextNode = nextNode.next;
         }
@@ -40,7 +40,7 @@ public class PrintNodeFromTailToHead {
             node = node.next;
         }
         while(!nodeList.isEmpty()){
-            System.out.println("Node节点数据 = [" + nodeList.pop().data + "]");
+            System.out.println("Node节点数据 = [" + nodeList.pop().val + "]");
         }
     }
 
@@ -52,7 +52,7 @@ public class PrintNodeFromTailToHead {
         if (header!=null){
             printByRecursive(header.next);
         }
-        System.out.println("NodePrintByRecursive = [" + header.data + "]");
+        System.out.println("NodePrintByRecursive = [" + header.val + "]");
     }
     /**
      * 返回arraylist
@@ -62,7 +62,7 @@ public class PrintNodeFromTailToHead {
     private  ArrayList<Integer> printByRecursiveReturnList(Node header) {
         if (header!=null){
             printByRecursiveReturnList(header.next);
-            result.add(header.data);
+            result.add(header.val);
         }
         return result;
     }
