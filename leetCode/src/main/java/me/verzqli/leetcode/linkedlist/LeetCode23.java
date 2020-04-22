@@ -2,15 +2,15 @@ package me.verzqli.leetcode.linkedlist;
 
 /**
  * \
- * åˆå¹¶ k ä¸ªæŽ’åºé“¾è¡¨ï¼Œè¿”å›žåˆå¹¶åŽçš„æŽ’åºé“¾è¡¨ã€‚è¯·åˆ†æžå’Œæè¿°ç®—æ³•çš„å¤æ‚åº¦ã€‚
- * è¾“å…¥:
+ * ºÏ²¢ k ¸öÅÅÐòÁ´±í£¬·µ»ØºÏ²¢ºóµÄÅÅÐòÁ´±í¡£Çë·ÖÎöºÍÃèÊöËã·¨µÄ¸´ÔÓ¶È¡£
+ * ÊäÈë:
  * [
  * 1->4->5,
  * 1->3->4,
  * 2->6
  * ]
- * è¾“å‡º: 1->1->2->3->4->4->5->6
- * å¯ä»¥è”åŠ¨å‰‘æŒ‡offer ä¾‹17
+ * Êä³ö: 1->1->2->3->4->4->5->6
+ * ¿ÉÒÔÁª¶¯½£Ö¸offer Àý17
  */
 public class LeetCode23 {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class LeetCode23 {
     }
 
     /**
-     * å¾ªçŽ¯
+     * Ñ­»·
      *
      * @param list
      * @return
@@ -35,7 +35,7 @@ public class LeetCode23 {
     }
 
     /**
-     * ä¸¤ä¸¤å½’å¹¶
+     * Á½Á½¹é²¢
      *
      * @param lists
      * @return
@@ -46,7 +46,7 @@ public class LeetCode23 {
         }
         return merge(lists, 0, lists.length - 1);
     }
-    //ç”¨äºŒåˆ†æ³•è®©ä¸¤ä¸¤èŠ‚ç‚¹äº’ç›¸æ¯”è¾ƒ
+    //ÓÃ¶þ·Ö·¨ÈÃÁ½Á½½Úµã»¥Ïà±È½Ï
     private Node merge(Node[] lists, int start, int end) {
         if (start == end) {
             return lists[start];

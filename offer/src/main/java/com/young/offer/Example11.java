@@ -1,7 +1,7 @@
 package com.young.offer;
 
 /**
- * å®ç°å‡½æ•°çš„æ•´æ•°æ¬¡æ–¹åŠŸèƒ½ï¼Œä¸éœ€è¦è€ƒè™‘å¤§æ•°é—®é¢˜
+ * ÊµÏÖº¯ÊıµÄÕûÊı´Î·½¹¦ÄÜ£¬²»ĞèÒª¿¼ÂÇ´óÊıÎÊÌâ
  */
 public class Example11 {
 
@@ -17,7 +17,7 @@ public class Example11 {
         if (exponent == 1) {
             return base;
         }
-        //0çš„è´Ÿæ¬¡æ–¹æ— æ„ä¹‰
+        //0µÄ¸º´Î·½ÎŞÒâÒå
         if (equal(base, 0.0) && exponent < 0) {
             return 0;
         }
@@ -47,7 +47,7 @@ public class Example11 {
         return result;
     }
 
-    //dobuleè®¡ç®—ç²¾åº¦æœ‰æŸå¤±ï¼Œæ‰€ä»¥åœ¨0.0000001èŒƒå›´å†…å°±é»˜è®¤ç›¸ç­‰
+    //dobule¼ÆËã¾«¶ÈÓĞËğÊ§£¬ËùÒÔÔÚ0.0000001·¶Î§ÄÚ¾ÍÄ¬ÈÏÏàµÈ
     private boolean equal(double base, double v) {
         return base - v > -0.0000001 && base - v < 0.0000001;
     }

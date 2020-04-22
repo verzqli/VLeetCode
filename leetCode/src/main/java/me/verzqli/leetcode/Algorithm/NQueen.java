@@ -28,8 +28,11 @@ public class NQueen {
                     break;
                 }
             }
-            if (col >= QueenNum) {//å¦‚æœæ‰¾åˆ°çš„åˆ—å¤§äºæ£‹ç›˜çš„èŒƒå›´
-                //è¡Œä¸º0æ—¶é€€å‡ºå¾ªç¯ï¼Œä¸ä¸º0æ—¶åˆ™è¡¨ç¤ºè¿™ä¸€è¡Œä¸å­˜åœ¨çš‡åï¼Œè¿”å›ä¸Šä¸€è¡Œæ‰¾ä¸‹ä¸€ä¸ªçš‡å
+            if (col >= QueenNum) {
+                /**
+                 * Èç¹ûÕÒµ½µÄÁĞ´óÓÚÆåÅÌµÄ·¶Î§
+                 * ĞĞÎª0Ê±ÍË³öÑ­»·£¬²»Îª0Ê±Ôò±íÊ¾ÕâÒ»ĞĞ²»´æÔÚ»Êºó£¬·µ»ØÉÏÒ»ĞĞÕÒÏÂÒ»¸ö»Êºó
+                 */
                 if (row == 0) {
                     break;
                 } else {
@@ -62,7 +65,7 @@ public class NQueen {
     }
 
     void print(int count) {
-        System.out.println("ç¬¬{" + (count) + "}ç§æ‘†æ³•ï¼š");
+        System.out.println("µÚ{" + (count) + "}ÖÖ°Ú·¨£º");
         for (int c = 0; c < QueenNum; c++) {
             for (int r = 0; r < QueenNum; r++) {
                 if (r == Queen[c]) {

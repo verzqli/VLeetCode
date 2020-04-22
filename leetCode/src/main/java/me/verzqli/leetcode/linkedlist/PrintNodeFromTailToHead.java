@@ -7,10 +7,10 @@ import java.util.Stack;
  * <pre>
  *     author: XuPei
  *     time  : 2019/5/16
- *     desc  : ä»å°¾éƒ¨åˆ°å¤´éƒ¨æ‰“å°ä¸€ä¸ªé“¾è¡¨çš„æ¯ä¸ªèŠ‚ç‚¹
- *     solve : 1.ä»å¤´éå†é“¾è¡¨è·å¾—èŠ‚ç‚¹å‹å…¥æ ˆä¸­ï¼Œæœ€åä»æ ˆé‡Œä¸€ä¸ªä¸ªå–å‡ºæ¥
- *             2.ç”¨é€’å½’ï¼Œåœ°æŸœå°±ç›¸å½“äºä¸€ä¸ªæ ˆï¼Œå¾ªç¯åˆ°æœ€åä¸€ä¸ªèŠ‚ç‚¹åœ¨æ‰“å°å‡ºæ¥ï¼Œä¸€å±‚å±‚é€€å‡ºæ¥å°±ç±»ä¼¼æ ˆæ‰“å°ï¼Œä¸è¿‡å¦‚æœé“¾è¡¨
- *             å±‚çº§è¿‡æ·±ä¼šå¯¼è‡´å‡½æ•°è°ƒç”¨æ ˆæº¢å‡ºï¼Œç”¨ç¬¬ä¸€ç§æ–¹å¼æ›´å¥½
+ *     desc  : ´ÓÎ²²¿µ½Í·²¿´òÓ¡Ò»¸öÁ´±íµÄÃ¿¸ö½Úµã
+ *     solve : 1.´ÓÍ·±éÀúÁ´±í»ñµÃ½ÚµãÑ¹ÈëÕ»ÖĞ£¬×îºó´ÓÕ»ÀïÒ»¸ö¸öÈ¡³öÀ´
+ *             2.ÓÃµİ¹é£¬µØ¹ñ¾ÍÏàµ±ÓÚÒ»¸öÕ»£¬Ñ­»·µ½×îºóÒ»¸ö½ÚµãÔÚ´òÓ¡³öÀ´£¬Ò»²ã²ãÍË³öÀ´¾ÍÀàËÆÕ»´òÓ¡£¬²»¹ıÈç¹ûÁ´±í
+ *             ²ã¼¶¹ıÉî»áµ¼ÖÂº¯Êıµ÷ÓÃÕ»Òç³ö£¬ÓÃµÚÒ»ÖÖ·½Ê½¸üºÃ
  * </pre>
  */
 public class PrintNodeFromTailToHead {
@@ -29,7 +29,7 @@ public class PrintNodeFromTailToHead {
     }
 
     /**
-     * ç”¨æ ˆæ¥å­˜å‚¨èŠ‚ç‚¹
+     * ÓÃÕ»À´´æ´¢½Úµã
      * @param header
      */
     private static void print(Node header) {
@@ -40,12 +40,12 @@ public class PrintNodeFromTailToHead {
             node = node.next;
         }
         while(!nodeList.isEmpty()){
-            System.out.println("NodeèŠ‚ç‚¹æ•°æ® = [" + nodeList.pop().val + "]");
+            System.out.println("Node½ÚµãÊı¾İ = [" + nodeList.pop().val + "]");
         }
     }
 
     /**
-     * ç”¨é€’å½’æ¥æ‰“å°
+     * ÓÃµİ¹éÀ´´òÓ¡
      * @param header
      */
     private static void printByRecursive(Node header) {
@@ -55,7 +55,7 @@ public class PrintNodeFromTailToHead {
         System.out.println("NodePrintByRecursive = [" + header.val + "]");
     }
     /**
-     * è¿”å›arraylist
+     * ·µ»Øarraylist
      * @param header
      */
     ArrayList<Integer> result=new ArrayList<>();

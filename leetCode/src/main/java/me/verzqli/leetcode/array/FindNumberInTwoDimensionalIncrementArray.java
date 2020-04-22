@@ -28,8 +28,8 @@ public class FindNumberInTwoDimensionalIncrementArray {
         if (matrix.length==0||matrix[0].length==0){
             return false;
         }
-        int col = matrix.length-1;//行
-        int row = matrix[0].length-1;//列
+        int col = matrix.length-1;
+        int row = matrix[0].length-1;
         int targetCol=col,targetRow=0;
         boolean result =false;
         while(targetCol>=0&&targetRow<=row){

@@ -6,10 +6,10 @@ import java.util.Arrays;
  * <pre>
  *     author: Windows XP
  *     time  : 2019/5/15
- *     desc  : 把字符串中的空格替换成%20,例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
- *     solve :先遍历出空格数量，给数组添加空格*3的空间，然后从后向前遍历，将空格修改成%20
- *     problem:这题对java有点缺陷，除非已经给定一个char数组，里面由多余的空间，不然就要重新new char[]来存储新的数组，不能在原来
- *     数组上操作，会越界
+ *     desc  : ���ַ����еĿո��滻��%20,���磬���ַ���ΪWe Are Happy.�򾭹��滻֮����ַ���ΪWe%20Are%20Happy��
+ *     solve :�ȱ������ո����������������ӿո�*3�Ŀռ䣬Ȼ��Ӻ���ǰ���������ո��޸ĳ�%20
+ *     problem:�����java�е�ȱ�ݣ������Ѿ�����һ��char���飬�����ɶ���Ŀռ䣬��Ȼ��Ҫ����new char[]���洢�µ����飬������ԭ��
+ *     �����ϲ�������Խ��
  * </pre>
  */
 public class ReplaceBlankInString {

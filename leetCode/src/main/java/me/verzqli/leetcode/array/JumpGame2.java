@@ -17,7 +17,7 @@ package me.verzqli.leetcode.array;
  * You can assume that you can always reach the last index.
  * 这里假定这个数组是可以走通的
  *
- * 解法:从0开始，获得每一个index的最远距离，然后求出最大值，
+ *
  * */
 class Solution {
     public int jump(int[] A) {

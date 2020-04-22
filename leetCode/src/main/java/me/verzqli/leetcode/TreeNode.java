@@ -1,4 +1,4 @@
-package me.verzqli.leetcode.tree;
+package me.verzqli.leetcode;
 
 /**
  * <pre>
@@ -8,10 +8,11 @@ package me.verzqli.leetcode.tree;
  * </pre>
  */
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) {
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+
+    public TreeNode(int x) {
         val = x;
     }
 }

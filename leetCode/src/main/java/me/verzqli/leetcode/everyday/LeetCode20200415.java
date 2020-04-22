@@ -4,41 +4,41 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * ç»™å®šä¸€ä¸ªç”± 0 å’Œ 1 ç»„æˆçš„çŸ©é˜µï¼Œæ‰¾å‡ºæ¯ä¸ªå…ƒç´ åˆ°æœ€è¿‘çš„ 0 çš„è·ç¦»ã€‚
+ * ¸ø¶¨Ò»¸öÓÉ 0 ºÍ 1 ×é³ÉµÄ¾ØÕó£¬ÕÒ³öÃ¿¸öÔªËØµ½×î½üµÄ 0 µÄ¾àÀë¡£
  *
- * ä¸¤ä¸ªç›¸é‚»å…ƒç´ é—´çš„è·ç¦»ä¸º 1 ã€‚
+ * Á½¸öÏàÁÚÔªËØ¼äµÄ¾àÀëÎª 1 ¡£
  *
- * ç¤ºä¾‹ 1:
- * è¾“å…¥:
- *
- * 0 0 0
- * 0 1 0
- * 0 0 0
- * è¾“å‡º:
+ * Ê¾Àý 1:
+ * ÊäÈë:
  *
  * 0 0 0
  * 0 1 0
  * 0 0 0
- * ç¤ºä¾‹ 2:
- * è¾“å…¥:
+ * Êä³ö:
+ *
+ * 0 0 0
+ * 0 1 0
+ * 0 0 0
+ * Ê¾Àý 2:
+ * ÊäÈë:
  *
  * 0 0 0
  * 0 1 0
  * 1 1 1
- * è¾“å‡º:
+ * Êä³ö:
  *
  * 0 0 0
  * 0 1 0
  * 1 2 1
- * æ³¨æ„:
+ * ×¢Òâ:
  *
- * ç»™å®šçŸ©é˜µçš„å…ƒç´ ä¸ªæ•°ä¸è¶…è¿‡ 10000ã€‚
- * ç»™å®šçŸ©é˜µä¸­è‡³å°‘æœ‰ä¸€ä¸ªå…ƒç´ æ˜¯ 0ã€‚
- * çŸ©é˜µä¸­çš„å…ƒç´ åªåœ¨å››ä¸ªæ–¹å‘ä¸Šç›¸é‚»: ä¸Šã€ä¸‹ã€å·¦ã€å³ã€‚
+ * ¸ø¶¨¾ØÕóµÄÔªËØ¸öÊý²»³¬¹ý 10000¡£
+ * ¸ø¶¨¾ØÕóÖÐÖÁÉÙÓÐÒ»¸öÔªËØÊÇ 0¡£
+ * ¾ØÕóÖÐµÄÔªËØÖ»ÔÚËÄ¸ö·½ÏòÉÏÏàÁÚ: ÉÏ¡¢ÏÂ¡¢×ó¡¢ÓÒ¡£
  *
- * æ¥æºï¼šåŠ›æ‰£ï¼ˆLeetCodeï¼‰
- * é“¾æŽ¥ï¼šhttps://leetcode-cn.com/problems/01-matrix
- * è‘—ä½œæƒå½’é¢†æ‰£ç½‘ç»œæ‰€æœ‰ã€‚å•†ä¸šè½¬è½½è¯·è”ç³»å®˜æ–¹æŽˆæƒï¼Œéžå•†ä¸šè½¬è½½è¯·æ³¨æ˜Žå‡ºå¤„ã€‚
+ * À´Ô´£ºÁ¦¿Û£¨LeetCode£©
+ * Á´½Ó£ºhttps://leetcode-cn.com/problems/01-matrix
+ * Öø×÷È¨¹éÁì¿ÛÍøÂçËùÓÐ¡£ÉÌÒµ×ªÔØÇëÁªÏµ¹Ù·½ÊÚÈ¨£¬·ÇÉÌÒµ×ªÔØÇë×¢Ã÷³ö´¦¡£
  */
 public class LeetCode20200415 {
     public static void main(String[] args) {
@@ -46,7 +46,7 @@ public class LeetCode20200415 {
     }
 
     public int[][] solve(int[][] matrix) {
-        //BFSå¹¿åº¦ä¼˜å…ˆéåŽ†ï¼Œå°†éåŽ†åŽçš„èŠ‚ç‚¹åŠ å…¥é˜Ÿåˆ—ï¼Œå±‚å±‚é€’è¿›éåŽ†
+        //BFS¹ã¶ÈÓÅÏÈ±éÀú£¬½«±éÀúºóµÄ½Úµã¼ÓÈë¶ÓÁÐ£¬²ã²ãµÝ½ø±éÀú
         Queue<int[]> queue0 = new LinkedList<>();
         int row = matrix.length;
         int col = matrix[0].length;
@@ -59,7 +59,7 @@ public class LeetCode20200415 {
                 }
             }
         }
-        //å››ä¸ªæ–¹å‘çš„xyè½´å·®é‡å€¼ï¼Œåˆ†åˆ«æ˜¯ä¸Šä¸‹å·¦å³
+        //ËÄ¸ö·½ÏòµÄxyÖá²îÁ¿Öµ£¬·Ö±ðÊÇÉÏÏÂ×óÓÒ
         int[] dx = new int[]{-1, 1, 0, 0};
         int[] dy = new int[]{0, 0, -1, 1};
         while (!queue0.isEmpty()) {

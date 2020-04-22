@@ -4,10 +4,10 @@ package me.verzqli.leetcode.recursion;
  * <pre>
  *     author: XuPei
  *     time  : 2019/7/9
- *     desc  : ä»Ž1æ‰“å°åˆ°Nä½çš„å…¨éƒ¨æ•°å­—
- *             æ¯”å¦‚Nä¸º3 é‚£ä¹ˆæ‰“å°1,2.3ã€‚ã€‚ã€‚999
- *             éœ€è¦è€ƒè™‘çš„æ¼æ´ž:1.å½“æ•°å­—ä¸å¤Ÿnä½çš„æ—¶å€™ï¼Œæˆ‘ä»¬åœ¨æ•°å­—çš„å‰é¢è¡¥0ï¼Œæ‰“å°çš„æ—¶å€™è¿™äº›è¡¥ä½çš„0ä¸åº”è¯¥æ‰“å°å‡ºæ¥
- *                          2:è€ƒè™‘å¤§æ•°é—®é¢˜ï¼Œæœ‰å¯èƒ½å³ä½¿ç”¨æ•´åž‹(int)æˆ–é•¿æ•´åž‹(long)éƒ½ä¼šæº¢å‡ºã€‚
+ *     desc  : ´Ó1´òÓ¡µ½NÎ»µÄÈ«²¿Êý×Ö
+ *             ±ÈÈçNÎª3 ÄÇÃ´´òÓ¡1,2.3¡£¡£¡£999
+ *             ÐèÒª¿¼ÂÇµÄÂ©¶´:1.µ±Êý×Ö²»¹»nÎ»µÄÊ±ºò£¬ÎÒÃÇÔÚÊý×ÖµÄÇ°Ãæ²¹0£¬´òÓ¡µÄÊ±ºòÕâÐ©²¹Î»µÄ0²»Ó¦¸Ã´òÓ¡³öÀ´
+ *                          2:¿¼ÂÇ´óÊýÎÊÌâ£¬ÓÐ¿ÉÄÜ¼´Ê¹ÓÃÕûÐÍ(int)»ò³¤ÕûÐÍ(long)¶¼»áÒç³ö¡£
  * </pre>
  */
 public class Print1ToMaxOfNDigits {
@@ -30,15 +30,15 @@ public class Print1ToMaxOfNDigits {
     }
 
     /**
-     * é€’å½’çš„å¤§è‡´é€»è¾‘ä¸ºæŠŠindexæ¶¨åˆ°2ï¼Œä¹Ÿå°±æ˜¯ä¸ªä½æ•°ï¼Œç„¶åŽè¾“å‡º1-9 è¿™æ—¶å€™ä¸ªä½æ•°çš„è¾“å‡ºå®Œæ¯•
-     * è¿”å›žåä½æ•°åŠ 1ï¼Œè¿™æ—¶å€™æ˜¯019 ä½†æ˜¯indexï¼ˆ1ï¼‰ != n - 1ï¼ˆ2ï¼‰æ‰€ä»¥è¿™æ—¶å€™ä¸è¾“å‡ºè¿”å›žåˆæŠŠindex+1
-     * ç»§ç»­è¾“å‡ºä¸ªä½1-9çš„å¾ªçŽ¯
-     * åä½è¿›é˜¶çš„å¾ªçŽ¯:
+     * µÝ¹éµÄ´óÖÂÂß¼­Îª°ÑindexÕÇµ½2£¬Ò²¾ÍÊÇ¸öÎ»Êý£¬È»ºóÊä³ö1-9 ÕâÊ±ºò¸öÎ»ÊýµÄÊä³öÍê±Ï
+     * ·µ»ØÊ®Î»Êý¼Ó1£¬ÕâÊ±ºòÊÇ019 µ«ÊÇindex£¨1£© != n - 1£¨2£©ËùÒÔÕâÊ±ºò²»Êä³ö·µ»ØÓÖ°Ñindex+1
+     * ¼ÌÐøÊä³ö¸öÎ»1-9µÄÑ­»·
+     * Ê®Î»½ø½×µÄÑ­»·:
      * number008   n= 3   index=2
      * number009   n= 3   index=2
      * number019   n= 3   index=1
      * number010   n= 3   index=2
-     * ç™¾ä½è¿›é˜¶çš„å¾ªçŽ¯:
+     * °ÙÎ»½ø½×µÄÑ­»·:
      * number098   n= 3   index=2
      * number099   n= 3   index=2
      * number199   n= 3   index=0
