@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/leetCode/src/main/java/me/verzqli/leetcode/linkedlist/LeetCode23.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/leetCode/src/main/java/me/verzqli/leetcode/linkedlist/PrintNodeFromTailToHead.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/leetCode/src/main/java/me/verzqli/leetcode/recursion/Print1ToMaxOfNDigits.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leetCode/src/main/java/me/verzqli/leetcode/sort/QuickSort.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leetCode/src/main/java/me/verzqli/leetcode/stack/TwoStackBeQueen.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/leetCode/src/main/java/me/verzqli/leetcode/string/ReplaceBlankInString.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/leetCode/src/main/java/me/verzqli/leetcode/tree/RebuildTreeByPreorderAndInorder.java" charset="GBK" />
