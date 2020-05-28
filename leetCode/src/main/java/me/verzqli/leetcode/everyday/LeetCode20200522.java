@@ -3,8 +3,6 @@ package me.verzqli.leetcode.everyday;
 import java.util.HashMap;
 
 import me.verzqli.leetcode.TreeNode;
-import sun.reflect.generics.tree.Tree;
-
 public class LeetCode20200522 {
     public static void main(String[] args) {
     }
