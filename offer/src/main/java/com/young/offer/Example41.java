@@ -1,12 +1,10 @@
 package com.young.offer;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Example40 {
+public class Example41 {
     public static void main(String[] args) {
-        new Example40().findContinuousSequence(9);
     }
 
     public int[][] findContinuousSequence(int target) {
