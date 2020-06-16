@@ -42,27 +42,23 @@ import java.util.Arrays;
 public class LeetCode20200614 {
     public static void main(String[] args) {
         new LeetCode20200614().findBestValue(new int[]{3, 4, 5, 6}, 18);
+
     }
 
 
     public int findBestValue(int[] arr, int target) {
         Arrays.sort(arr);
         int len = arr.length;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < len; i++) {
             if (arr[i] * (len - i) == target) {
                 return arr[i];
             } else if (arr[i] * (len - i) > target) {
                 int average = target / (len - i);
-                if (target - average * (len - i) > Math.abs(target - (average + 1) * (len - i))) {
-                    return average + 1;
-                } else {
-                    return average;
-                }
+                return (target - average * (len - i)) > ((average + 1) * (len - i) - target) ? average + 1 : average;
             } else {
                 target -= arr[i];
             }
         }
         return arr[len-1];
     }
-
 }
