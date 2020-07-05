@@ -10,35 +10,33 @@ import java.util.Deque;
  */
 class LeetCode20200704 {
     public int longestValidParentheses(String s) {
-        Deque<Character> deque = new ArrayDeque<>();
-        int pre = 0;
-        int cur = 0;
-        int max = 0;
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (c == ')') {
-                if (deque.isEmpty()){
-                    pre = 0;
-                    continue;
+            int left = 0, right = 0, maxlength = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == '(') {
+                    left++;
+                } else {
+                    right++;
                 }
-                while (i < s.length() && s.charAt(i) == ')' && !deque.isEmpty()) {
-                    deque.pollLast();
-                    cur += 2;
-                    max = Math.max(max, cur);
-                    i++;
+                if (left == right) {
+                    maxlength = Math.max(maxlength, 2 * right);
+                } else if (right > left) {
+                    left = right = 0;
                 }
-                if (s.isEmpty()){
-                    cur += pre;
-                    max = Math.max(max, cur);
-                    pre  =cur;
-                    cur = 0;
-                }
-                pre = 0;
-            } else {
-                deque.addLast(c);
             }
-
-        }
-        return max;
+            //×¢ÒâÖÃÎª0
+            left = right = 0;
+            for (int i = s.length() - 1; i >= 0; i--) {
+                if (s.charAt(i) == '(') {
+                    left++;
+                } else {
+                    right++;
+                }
+                if (left == right) {
+                    maxlength = Math.max(maxlength, 2 * left);
+                } else if (left > right) {
+                    left = right = 0;
+                }
+            }
+            return maxlength;
     }
 }
