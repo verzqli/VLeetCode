@@ -1,6 +1,5 @@
 package me.verzqli.leetcode;
 
-import android.os.Binder;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
